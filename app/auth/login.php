@@ -24,18 +24,24 @@
                 $stmt->bindParam(':p_username', $username);
                 $stmt->execute();
                 $users = $stmt->fetchAll();
+
                if($users){
-                //echo "user found".json_encode($users);
-                    if($password == $users[0]["password"]){
-                    //if(password_verify($password,$users[0]["password"])){
-                        echo "login successful";
+                        if(password_verify($password,$users[0]["password"])){
+                        header("location: /index.php");
                         $_SESSION["fullname"] = $users[0]["fullname"];
+                        exit;
                     } else {
-                        echo "password did not match";
-                }
+                         header("location: /login.php?");
+                         $_SESSION["error"] = "Password not match";
+                         exit;
+                    }
                } else {
-                echo "user not exist";
-               }
+                header("location: /login.php?");
+                $_SESSION["error"] = "User not found";
+                exit;               
+            }
+
+
 
             } catch (Exception $e){
                 echo "Connection Failed: " . $e->getMessage();
