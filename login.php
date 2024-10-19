@@ -24,7 +24,7 @@ require_once("includes/header.php");
                     <div class="card-body">
                     <?php if(isset($_SESSION["success"])){ ?>
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <strong><?php echo $$_SESSION["success"]; ?></strong> 
+                        <strong><?php echo $_SESSION["success"]; ?></strong> 
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     <?php } ?>
