@@ -1,4 +1,6 @@
-<?php require_once("includes/header.php")?>
+<?php 
+require_once(__DIR__."/app/config/Directories.php");
+require_once("includes/header.php")?>
 
     <!-- Navbar -->
     <?php require_once("includes/navbar.php")?>
@@ -81,5 +83,5 @@
     
    
 
-    <?php require_once("includes/footer.php")?>
+<?php require_once("includes/footer.php")?>
 
