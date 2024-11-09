@@ -22,7 +22,7 @@
 
     <!-- Product Maintenance Form -->
   
-    <div class="container my-5">
+    <div class="container my-5 content">
         <h2>Product Maintenance</h2>
 
                 <!-- message response -->
