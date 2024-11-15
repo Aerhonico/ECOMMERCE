@@ -76,6 +76,9 @@
                 <!-- Right Column: Product Details -->
                 <div class="col-md-8">
                     <div class="row">
+                        <!--Product ID -->
+                        <input type="hidden" name="id" value="<?php echo $product["id"]; ?>">
+                        <input type="hidden" name="productImage2" value="<?php echo $product["image_url"]; ?>">
                         <!-- Product Name -->
                         <div class="col-md-12 mb-3">
                             <label for="productName" class="form-label">Product Name</label>
@@ -131,8 +134,11 @@
 
                     <!-- Save Button (aligned to right) -->
                     <div class="row">
-                        <div class="col-md-12 d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Save Product</button>
+                        <div class="col-md-6 d-grid gap-2">
+                            <a href="<?php echo BASE_URL; ?>views/admin/products/index.php" class="btn btn-outline-secondary">Cancel</a>
+                        </div>
+                        <div class="col-md-6 d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Update Product</button>
                         </div>
                     </div>
 
