@@ -79,6 +79,7 @@
                         <!--Product ID -->
                         <input type="hidden" name="id" value="<?php echo $product["id"]; ?>">
                         <input type="hidden" name="productImage2" value="<?php echo $product["image_url"]; ?>">
+                        
                         <!-- Product Name -->
                         <div class="col-md-12 mb-3">
                             <label for="productName" class="form-label">Product Name</label>
