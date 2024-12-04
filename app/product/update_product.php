@@ -4,7 +4,7 @@ if(!isset($_SESSION)){
 }
 
 require_once(__DIR__."/../config/Directories.php"); // To handle folder-specific path
-include("..\config\DatabaseConnect.php"); // To access database connection
+include("../config/DatabaseConnect.php"); // To access database connection
 
 $db = new DatabaseConnect(); // Make a new database instance
 

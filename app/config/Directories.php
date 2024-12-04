@@ -1,3 +1,3 @@
 <?php
-define('BASE_URL', "http://ecommercev2.test/");
+define('BASE_URL', "https://amagtira.futurewebbuilders.design/");
 define('ROOT_DIR', $_SERVER["DOCUMENT_ROOT"]."/");
